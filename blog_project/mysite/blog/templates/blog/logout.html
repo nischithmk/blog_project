@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+<style>
+    .btn{
+  width: 100%;
+  background: none;
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+
+</style>
+<div class="jumbotron">
+    <div class="container">
+        <h1> You have been logged out!</h1>
+        <button class = "btn"> <a href="{% url 'user_login' %}">login again</a> </button>
+       <button class = "btn"> <a href="{% url 'register' %}">Register as new user</a> </button>
+
+    </div>
+</div>
+
+</body>
+</html>

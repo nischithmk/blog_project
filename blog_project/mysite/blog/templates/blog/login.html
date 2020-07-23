@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+
+</head>
+<body>
+<div class="login-box">
+<h1>Login</h1>
+
+    <form action="{% url 'user_login' %}" method="post">
+        {% csrf_token %}
+        <div class="textbox">
+          <i class="fas fa-user"></i>
+        <label for="username">Username:</label>
+        <input type="text" name="username">
+        </div>
+
+          <div class="textbox">
+    <i class="fas fa-lock"></i>
+        <label for="password">Password:</label>
+        <input type="password" name="password" >
+          </div>
+
+        <input type="submit" class="btn" value="LOGIN">
+
+
+    </form>
+    </br>
+    <h4>Not registered?<a class="nav-link active" href="{% url 'register' %}">REGISTER</a> here</h4>
+</div>
+</body>
+</html>
