@@ -4,6 +4,6 @@
 
 -> user can Create Update Delete the blog
 
--> user can also upload images 
+-> user can also upload images
 
 -> user can add Like and Comments to post
