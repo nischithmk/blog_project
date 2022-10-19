@@ -31,7 +31,8 @@
 <body>
 <style>
 body{
-background:#1e2321;
+/* background:#657a72; */
+background:#AA96DA;
 }
     #name{
  position: absolute;
@@ -83,7 +84,7 @@ top: -20px;
         <a href="{% url 'post_draft_list' %}">Drafts</a>
                     </div>
                                 </div>
-        <li><a href="{% url 'logout' %}">Log out</a></li>
+        <li><a style="color: #c7d3d4;" href="{% url 'logout' %}">Log out</a></li>
         <li><a>Welcome: {{ user.username }}</a></li>
     {% else %}
     <li><a  href="{% url 'user_login' %}"><span class="glyphicon glyphicon-user"></span> login</a></li>

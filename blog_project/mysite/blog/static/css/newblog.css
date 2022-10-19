@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-body{
-background: #060c21;
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+body {
+  background: #b3b8c7;
 }
-#name{
- position: absolute;
+#name {
+  position: absolute;
   top: 8px;
   left: 16px;
 }
 
-
-.b{
-    border-style: solid;
+.b {
+  border-style: solid;
 }
 .container {
-	width: 80%;
-	margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 header {
-  background: #333D79FF;
+  background: #333d79ff;
 }
 
 header::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -51,7 +50,7 @@ nav li {
 }
 
 nav a {
-  color: #C7D3D4FF;
+  color: #c7d3d4ff;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -62,7 +61,7 @@ nav a:hover {
 }
 
 nav a::before {
-  content: '';
+  content: "";
   display: block;
   height: 5px;
   background-color: #444;
@@ -90,7 +89,7 @@ nav a:hover::before {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -101,78 +100,71 @@ nav a:hover::before {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.techfont{
-font-family: 'Chelsea Market', cursive;
-font-size : 1.5em;
-margin-bottom = 10px;
+.techfont {
+  font-family: "Chelsea Market", cursive;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 .bigbrand {
-font-size:1.5em;
-
+  font-size: 1.5em;
 }
 
-.centerstage{
-
-margin-left: 400px;
-margin-right: auto;
-
+.centerstage {
+  margin-left: 400px;
+  margin-right: auto;
 }
 
-.postdate{
-text-align:center;
+.postdate {
+  text-align: center;
 }
 
-.posttitle{
-font-family: 'Chelsea Market', cursive;
-font-size : 3em;
-text-align : center;
+.posttitle {
+  font-family: "Chelsea Market", cursive;
+  font-size: 3em;
+  text-align: center;
 }
 
-.postcontent{
-font-family : 'Montserrat';
-font-size : 1.5em;
+.postcontent {
+  font-family: "Montserrat";
+  font-size: 1.5em;
 }
 
-.btn-comment{
-position : absolute;
-right: 0px;
+.btn-comment {
+  position: absolute;
+  right: 0px;
 }
-
-
 
 /* for box */
 
-
-.box{
+.box {
   position: relative;
   width: 400px;
   height: 500px;
   display: flex;
-    justify-content: center;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
-  background: #222222;
-
-
+  background: #cfd0ccb1;
 }
 
-.images:hover{
- -ms-transform: scale(1.5); /* IE 9 */
+.images:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
   transition: transform 0.8s;
-
-
 }
 
-.box:before{
-
-  content: '';
+/* .box:before {
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
@@ -182,9 +174,8 @@ right: 0px;
   z-index: -1;
 }
 
-.box:after{
-
-  content: '';
+.box:after {
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
@@ -192,26 +183,37 @@ right: 0px;
   bottom: -2px;
   background: #fff;
   z-index: -2;
-  filter:blur(20px);
+  filter: blur(20px);
 }
 
 .box:before,
-.box::after{
- background: linear-gradient(235deg,#B0C4DE,#060c21,#B0C4DE);
-}
+.box::after {
+  background: linear-gradient(235deg, #b0c4de, #060c21, #b0c4de);
+} */
 
-.content
-{
-    padding:20px;
-  color: #fff;
+.content {
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+a:link {
+  color: rgb(10, 10, 10);
+  background-color: transparent;
+  text-decoration: none;
 }
 
 /* button tag */
 button {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.post-contents {
+  max-height: 70px;
+  max-width: 280px;
+  overflow: auto;
+  font-size: medium;
 }
