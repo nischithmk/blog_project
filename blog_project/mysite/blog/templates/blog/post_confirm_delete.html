@@ -1,9 +1,7 @@
-{% extends "blog/base.html" %}
-
-{% block content %}
+{% extends "blog/base.html" %} {% load staticfiles %} {% block content %}
 <form method="post">
-    {% csrf_token %}
-    <p>Are you sure you want to delete {{object}}</p>
-    <input type="submit" class="btn btn-danger" value="confirm">
+  {% csrf_token %}
+  <p>Are you sure you want to delete {{object}}</p>
+  <input type="submit" class="btn btn-danger" value="confirm" />
 </form>
 {% endblock %}
