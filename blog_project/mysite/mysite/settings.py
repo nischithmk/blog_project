@@ -124,18 +124,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 #https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-LOGIN_REDIRECT_URL = '/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'blog/static')
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'blog/static'),
+# )
+# LOGIN_REDIRECT_URL = '/'
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 django_heroku.settings(locals())
@@ -152,8 +152,8 @@ AWS_S3_CUSTOM_DOMAIN = AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com'
 #static media settings
 STATIC_URL = 'https://' + AWS_STORAGE_BUCKET_NAME + '.s3.amazonaws.com/'
 MEDIA_URL = STATIC_URL + 'media/'
-STATICFILES_DIRS = ( os.path.join(BASE_DIR, "static"), )
-STATIC_ROOT = 'staticfiles'
+STATICFILES_DIRS = ( os.path.join(BASE_DIR, "blog/static"), )
+STATIC_ROOT = 'staticfiles' #os.path.join(BASE_DIR, 'blog/static') #
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 STATICFILES_FINDERS = (
 'django.contrib.staticfiles.finders.FileSystemFinder',
